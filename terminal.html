@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terminal — Aarush Karak</title>
+  <meta name="description" content="A command-line version of Aarush Karak's personal site. Type help to see the pages.">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131311" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("aarush-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {}
+  </script>
+</head>
+<body class="terminal-page">
+  <main class="terminal" aria-label="Terminal">
+    <h1 class="visually-hidden">Aarush Karak — Terminal</h1>
+
+    <div class="terminal-bar">
+      <span>aarush@3ni8ma: ~</span>
+      <a href="index.html">← back to site</a>
+    </div>
+
+    <div class="terminal-output" id="output" role="log" aria-label="Terminal output">
+      <div class="line accent">Aarush Karak — personal terminal</div>
+      <div class="line dim">Type "help" to see the pages and commands.</div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <form class="terminal-form" id="terminal-form" autocomplete="off">
+      <label class="terminal-prompt" for="command">aarush@3ni8ma:~$</label>
+      <input id="command" name="command" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Command">
+    </form>
+
+    <noscript>
+      <p class="line dim">This terminal needs JavaScript. <a href="index.html">Back to the site</a>.</p>
+    </noscript>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="terminal.js"></script>
+</body>
+</html>

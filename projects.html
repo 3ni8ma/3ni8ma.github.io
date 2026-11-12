@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Aarush Karak</title>
+  <meta name="description" content="Selected software projects by Aarush Karak: HELIOS, astro-tasks, Finance Hub, Knowledge-Globe, and more.">
+  <meta property="og:title" content="Projects — Aarush Karak">
+  <meta property="og:description" content="Selected software projects by Aarush Karak.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131311" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("aarush-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Aarush Karak</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="terminal.html">Terminal</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" style="display: none">
+            <path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z"></path>
+          </svg>
+          <span data-theme-label>dark</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-intro" aria-labelledby="projects-title">
+        <h1 id="projects-title">Projects</h1>
+        <p class="lede">A running list of things I've built. Most of them are open source, and a few are live.</p>
+      </section>
+
+      <section class="page-section" aria-labelledby="selected-title">
+        <h2 id="selected-title">Selected work</h2>
+
+        <ul class="project-list">
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/HELIOS" target="_blank" rel="noopener">HELIOS</a></h3>
+              <span class="project-meta">Three.js, MediaPipe</span>
+            </div>
+            <p>A browser-based AI operating system with touch-free hand-gesture navigation and a 3D spatial interface. Built with Three.js and MediaPipe.</p>
+            <p class="project-links">
+              <a href="https://helios-psi-three.vercel.app" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/3ni8ma/HELIOS" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/astro-tasks" target="_blank" rel="noopener">astro-tasks</a></h3>
+              <span class="project-meta">Python, CLI, PyPI</span>
+            </div>
+            <p>A Python command-line dashboard that pulls GitHub activity, git health, and project stats into one view. Published on PyPI for the Stardance Challenge.</p>
+            <p class="project-links">
+              <a href="https://pypi.org/project/astro-tasks/" target="_blank" rel="noopener">PyPI <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/3ni8ma/astro-tasks" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/Finance-Hub" target="_blank" rel="noopener">Finance Hub</a></h3>
+              <span class="project-meta">React, FastAPI, Supabase</span>
+            </div>
+            <p>A full-stack financial intelligence platform with live market monitoring, portfolio analysis, and Prophet-based forecasts.</p>
+            <p class="project-links">
+              <a href="https://github.com/3ni8ma/Finance-Hub" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/Knowledge-Globe" target="_blank" rel="noopener">Knowledge-Globe</a></h3>
+              <span class="project-meta">Three.js, WebGL</span>
+            </div>
+            <p>An interactive 3D encyclopedia that plots connections between topics on a rotatable globe.</p>
+            <p class="project-links">
+              <a href="https://knowledge-globe.vercel.app" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/3ni8ma/Knowledge-Globe" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-section" aria-labelledby="also-title">
+        <h2 id="also-title">Also</h2>
+
+        <ul class="project-list">
+          <li>
+            <div class="project-head">
+              <h3><a href="https://fixmate.vercel.app" target="_blank" rel="noopener">FixMate</a></h3>
+              <span class="project-meta">TypeScript, AI</span>
+            </div>
+            <p>An AI-powered home maintenance app that diagnoses household problems and recommends repairs.</p>
+            <p class="project-links">
+              <a href="https://fixmate.vercel.app" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/TheCoderBros-Website" target="_blank" rel="noopener">TheCoderBros</a></h3>
+              <span class="project-meta">Next.js, Vercel</span>
+            </div>
+            <p>The official site for TheCoderBros: coding courses, labs, cheat sheets, and community.</p>
+            <p class="project-links">
+              <a href="https://thecoderbros.vercel.app" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/3ni8ma/TheCoderBros-Website" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/mithun-srinivas/DoxDock" target="_blank" rel="noopener">DoxDock</a></h3>
+              <span class="project-meta">Open-source contribution</span>
+            </div>
+            <p>Contributed an in-browser AI upscaler and the Vitest test suite to this document intelligence platform.</p>
+            <p class="project-links">
+              <a href="https://doxdock.vercel.app/ideology.html" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/mithun-srinivas/DoxDock" target="_blank" rel="noopener">Upstream <span aria-hidden="true">↗</span></a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page-section" aria-labelledby="now-title">
+        <h2 id="now-title">Now</h2>
+        <p>Building HELIOS and astro-tasks. Open to freelance work. <a href="mailto:worldshaans@gmail.com">Email me</a>.</p>
+        <p>This site is hand-written HTML, CSS, and JavaScript. No framework, no build step. The source is on <a href="https://github.com/3ni8ma/3ni8ma.github.io" target="_blank" rel="noopener">GitHub</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Aarush Karak · Mississauga, Ontario</span>
+      <span>Built at Fraser Comp Sci Club, Meeting 04 · <button class="footer-mark" type="button" data-confetti aria-label="Confetti">&gt;_</button></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

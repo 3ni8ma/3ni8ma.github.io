@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name</title>
+  <title>Aarush Karak — Student and software developer</title>
+  <meta name="description" content="Aarush Karak is a student and software developer in Mississauga, Ontario. Founder of TheCoderBros.">
+  <meta property="og:title" content="Aarush Karak">
+  <meta property="og:description" content="Student and software developer in Mississauga, Ontario. Founder of TheCoderBros.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131311" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("aarush-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (error) {}
+  </script>
 </head>
 <body>
-  <h1>Hi, I'm Your Name!</h1>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="wordmark" href="index.html">Aarush Karak</a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="terminal.html">Terminal</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" style="display: none">
+            <path d="M20 14.5A8 8 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5Z"></path>
+          </svg>
+          <span data-theme-label>dark</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title">Aarush Karak</h1>
+          <p class="lede">Student and software developer in Mississauga, Ontario. I build web apps, developer tools, and interfaces that use more than a keyboard.</p>
+          <p>I'm in Grade 10 at John Fraser Secondary School and the founder of TheCoderBros, a small studio where I build software for clients. Most of what I make starts as an experiment and ends up on GitHub.</p>
+
+          <ul class="hero-links">
+            <li><a href="https://github.com/3ni8ma" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/aarush-karak-260257321" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            <li><a href="mailto:worldshaans@gmail.com">Email</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+
+        <figure class="portrait">
+          <img src="me.jpg" alt="Aarush Karak in a suit, smiling" width="600" height="750">
+          <figcaption>Aarush Karak / 2026</figcaption>
+        </figure>
+      </section>
+
+      <section class="page-section" aria-labelledby="work-title">
+        <h2 id="work-title">Selected work</h2>
+
+        <ul class="project-list">
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/HELIOS" target="_blank" rel="noopener">HELIOS</a></h3>
+              <span class="project-meta">Three.js, MediaPipe</span>
+            </div>
+            <p>A browser-based operating system with touch-free hand-gesture navigation and a 3D spatial interface.</p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/astro-tasks" target="_blank" rel="noopener">astro-tasks</a></h3>
+              <span class="project-meta">Python, CLI, PyPI</span>
+            </div>
+            <p>A command-line dashboard that pulls GitHub activity, git health, and project stats into one view.</p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/Finance-Hub" target="_blank" rel="noopener">Finance Hub</a></h3>
+              <span class="project-meta">React, FastAPI, Supabase</span>
+            </div>
+            <p>A full-stack market dashboard with live quotes, portfolio tracking, and Prophet-based forecasts.</p>
+          </li>
+          <li>
+            <div class="project-head">
+              <h3><a href="https://github.com/3ni8ma/Knowledge-Globe" target="_blank" rel="noopener">Knowledge-Globe</a></h3>
+              <span class="project-meta">Three.js, WebGL</span>
+            </div>
+            <p>An interactive 3D encyclopedia that plots connections between topics on a rotatable globe.</p>
+          </li>
+        </ul>
+
+        <p class="more-link"><a href="projects.html">All projects →</a></p>
+      </section>
+
+      <section class="page-section" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+
+        <div class="about-copy">
+          <p>I got into programming through game design and stayed for the web. These days I'm most interested in spatial computing, AI, and tools that make development feel faster.</p>
+          <p>Most of what I know came from starting projects I didn't know how to finish, then figuring them out. I'm currently spending most of my time on HELIOS and astro-tasks.</p>
+          <p>I'm open to freelance work. The fastest way to reach me is <a href="mailto:worldshaans@gmail.com">email</a>.</p>
+        </div>
+
+        <ul class="awards">
+          <li>1st place, TSA State Championship<span>Video Game 3D Design</span></li>
+          <li>Invited scholar, National Youth Leadership Forum<span>Engineering</span></li>
+        </ul>
+      </section>
+
+      <section class="terminal-cta" aria-label="Terminal">
+        <p>This site has a command line. Type <code>help</code> in the <a href="terminal.html">terminal</a> to see the pages.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Aarush Karak · Mississauga, Ontario</span>
+      <span>Built at Fraser Comp Sci Club, Meeting 04 · <button class="footer-mark" type="button" data-confetti aria-label="Confetti">&gt;_</button></span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
